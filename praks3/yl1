@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# kuupäevkellaegskript
+#
+echo "kuupäev ja kellaeg"
+date  
+cal
+#
+# skripti lõpp
