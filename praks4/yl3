@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#
+echo "Sisestage reisjate arv" #reisijate arvu küsimine
+read reisjad
+
+echo "Sisestage kohtade arv" #kohtade arvu küsimine
+read kohad
+
+#
+bussis=`expr $bussis \*$kohad` #kohade arvutamine
+
+bkarv=`expr $bussis \*kohad` #arvutan mitu kohta on saadaval
+
+mjaa=`expr $reisjad - $bkarv` #reisiate arv miinus kohad
+
+echo "Täidetud busside arv: $bussis bussi; Bussi ei mahu $mjaa inimest"
+#
+# lõpp
