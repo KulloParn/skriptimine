@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# yl1
+echo -n "Sisesta oma ees- ja perenimi: " # teksti read eesnimi perenimi
+read eesnimi perenimi # loeb eesnime ja perenime
+echo "Sinu eesnimi on $eesnimi ja perenimi on $perenimi" # saadud andmed
+#
+# lõpp
