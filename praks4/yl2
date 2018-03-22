@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# yl2
+#
+# Kandiku pindala küsimused
+echo "Sisesta kandiku pikkus(cm)"
+read pikkus
+
+echo "Sisesta kandiku laius(cm)"
+read laius
+
+echo "Sisesta küpsis pikkus(cm)"
+read pikkus
+
+echo "Sisesta küpsise laius(cm)"
+read laius
+
+echo "Mitu küpsist on kapis(tk)?"
+read mitu
+
+echo "Mitme kihiline tuleb kook?"
+read kihte
+
+#
+# Kandiku pindala arvutamine
+pindala=`expr $pikkus \* $laius`
+# Küpsiste pindala arvutamine
+kogus=`expr $kpikkus \* $klaius`
+# Mitu küpsist on vaja üheks kihiks
+yheskihis=`expr $pindala / $kogus`
+echo "Kandiku pindala on $pindala cm ja küpsiste pindala $kogus cm, ühes kihis on $yheskihis küpsist"
+# Küpsiste pakkide arv, et saada ühte kihti
+yheskihispakke=`expr $yheskihis / $mitu`
+# Pakke kokku vaja
+kokku=`expr $yheskihispakke \* $kihtide_arv`
+# küpsiste pakke vaja
+echo "Teil on vaja muretseda $kokku pakki"
+#
+# lõpp
