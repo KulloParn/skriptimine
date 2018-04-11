@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# paaris ja paaritu arv
+#
+echo "Sisestage suvaline täisarv"
+read arv
+#
+tulemus=$(($arv % 2)) 
+if [ $tulemus -eq 0 ]
+then
+echo "Antud arv $arv on paarisarv" 
+else 
+echo "Antud arv $arv on paarituarv" 
+fi
+#
+# lõpp
