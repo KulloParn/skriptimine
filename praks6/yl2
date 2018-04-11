@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# bussid
+#
+echo "Sisestage reisijate arv:"
+read inimest
+echo "Sisestage kohtade arv bussis:"
+read kohti
+bussid=$(($inimest / $kohti))
+yle=$(($inimest % $kohti))
+#
+if test $yle -gt 0
+then
+bussid=$(($bussid +1))
+fi
+#
+echo "Tarvis on: $bussid bussi"
+#
+# lõpp
