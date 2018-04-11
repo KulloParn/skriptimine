@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# kolmurga hüpotenuusi arvutamine
+#
+echo "Sisestage kolmnurga ühe külje pikkus(cm):"
+read a 
+echo "Sisestage kolmnurga teise külje pikkus(cm):"
+read b
+a1=`expr $a \* $a`
+b1=`expr $b \* $b`
+d=`expr $a1 \+ $b1`
+c=$(echo "$d" | awk '{print sqrt($1)}')
+echo "Kolmnurga hüpotenuus on: $c"
+#
+# lõpp
