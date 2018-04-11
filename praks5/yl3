@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Reisimine
+#
+echo "Pyhapeäv 0, Esmaspäev 1, Teisipäev 2, Kolmapäev 3, Neljapäev 4, Reede 5, Laupäev 6, Pühapäev 7"
+echo "Kuna te sõidata ära?"
+read soit
+echo "Mitu ööpäeva reisite?"
+read paevad
+x=$(($paevad % 7))
+tagasi=$(($soit + $x))
+echo "Tagasi oled päeval: $tagasi"
+#
+# lõpp
