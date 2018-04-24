@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+# yl3
+echo -n "Sisestage kellaaeg:"
+read aeg
+
+if [ $aeg -ge 6 -a $aeg -le 12 ] #Kell 6-12
+then
+	echo "Tere hommikust!"
+elif [ $aeg -ge 12 -a $aeg -le 18 ] #Kell 12-18
+then
+	echo "Tere päevast!"
+elif [ $aeg -ge 18 -a $aeg -le 22 ] #Kell 18-22
+then
+	echo "Tere õhtust!"
+elif [ $aeg -ge 23 -a $aeg -le 24 ] #Kell 22-24
+then
+	echo "Head ööd!"
+elif [ $aeg -ge 0 -a $aeg -le 5 ]
+then
+	echo "Head ööd!"
+fi
+#
+# lõpp
